@@ -6,4 +6,6 @@ Feature: Feature:  Shop should be closed on Tuesdays
   @store_hours
   Scenario: The Shop should be closed on Tuesday 
     Given a menu order
-    
+    When the date is Tuesday 
+    Then I expect the inventory count to be the same 
+    And I expect an error message to be displayed when trying to order 
