@@ -9,3 +9,4 @@ Feature: Feature:  Shop should be closed on Tuesdays
     When the date is Tuesday 
     Then I expect the inventory count to be the same 
     And I expect an error message to be displayed when trying to order 
+    And Make a change
